@@ -1,0 +1,260 @@
+
+
+/*
+  var marca = [
+    "Abarth",
+    "Alfa Romeo",
+    "Aston Martin",
+    "Audi",
+    "Bentley",
+    "BMW",	
+   "Cadillac",
+    "Caterham",
+    "Chevrolet",
+    "Citroen",
+    "Dacia",
+    "Ferrari",
+    "Fiat",
+    "Ford",
+    "Honda",
+    "Infiniti",
+    "Isuzu",
+    "Iveco",
+    "Jaguar"   	 	 
+]
+
+var modelo = [
+    "C-Max",
+    "Fiesta",
+    "Focus",
+    "Mondeo",
+    "Ka",
+    "S-MA",
+   " B-MAX",
+    "Grand C-Max",
+    "Tourneo Custom",
+    "Kuga",
+    "Galaxy",
+    "Grand Tourneo Connect",
+    "Tourneo Connect",
+    "EcoSport",
+    "Tourneo Courier",
+    "Mustang",
+    "Transit Connect",
+    "Edge",
+    "Ka+"
+]
+
+var anio = [
+    "1988",
+    "1989",
+    "1978",
+    "1989",
+    "1928",
+    "1989",
+    "1968",
+    "1989",
+    "1888",
+    "1989",
+    "1288",
+    "1989",
+    "1938",
+    "1989",
+    "1988",
+    "1999",
+    "1983",
+    "1989",
+    "1918"
+]
+
+
+function auto(marca, modelo, anio){
+    this.marca = marca;
+    this.modelo = modelo;
+    this.anio = anio;
+}
+
+for(var i = 0; marca.length > i && modelo.length > i && anio.length > i; i++){
+    var nuevoAuto = new auto(marca[i], modelo[i], anio[i]);
+    console.log(nuevoAuto)
+}
+
+
+
+/*
+var tama = prompt("Cuantos autos va aingresar?")
+var tama1 = parseInt(tama);
+
+var modelo = []; 
+var marca = [];
+var tiempo = [];
+
+for (var i = 0; i < tama1 ; i++) { 
+    modelo [i] = prompt("Ingresa la modelo del auto");
+    marca[i] = prompt("Ingresa el marca del auto");
+    tiempo[i] = prompt("Ingresa el año del auto");
+}
+
+for (var i = 0; i < tama1; i++) {
+    alert(`${modelo[i]} ${marca[i]} ${tiempo[i]}`);
+}
+
+
+
+/*
+var miAuto = {
+    marca: "toyota",   
+    modelo: "corolla",
+    annio: 2020,
+    detallesdeAuto: function() {  
+      return `${this.marca} ${this.modelo} ${this.annio}`;
+  }
+};
+
+alert(miAuto.detallesdeAuto()); 
+
+
+
+/*
+var tama = prompt("Que cantidad de estudiantes va aingresar?")
+var tama1 = parseInt(tama);
+
+var estudiantes = []; 
+
+function saludarEstudiante(estudiante){
+    alert("Hola " + estudiante);
+}
+
+for (var i = 0; i < tama1 ; i++) {
+    estudiantes [i] = prompt ("Hola cual es el nombre de estudiante " + i);
+}
+
+while(estudiantes.length > 0){
+    var estudiante = estudiantes.shift();
+    saludarEstudiante(estudiante);
+}
+
+
+
+
+/*
+for (var i = 0; i < estudiantes.length; i++) {
+    saludarEstudiante(estudiantes[i]);
+}
+
+
+/*
+var frutas = ["manzana","pera","uvas"];
+
+var puesto = frutas.indexOf('pera');
+
+alert(puesto);
+
+/*
+function suma(a,b){
+    var a=3;
+    var b=5;
+    return a+b;
+}
+
+alert(suma());
+
+
+
+/*
+var resultado;
+var jugador1= prompt("Jugador 1:: elija una opcion 1.(piedra) 2.(papel) 3.(tijera)");
+var jugador2= prompt("Jugador 2:: elija una opcion 1.(piedra) 2.(papel) 3.(tijera)");
+
+var jugador11= parseInt(jugador1);
+var jugador22 = parseInt(jugador2);
+
+switch (true){
+
+    case jugador11===jugador22:
+        resultado = "Estan empatados";
+        break;
+
+    case jugador11===1 && jugador22===3:
+        resultado = "Gana jugador1";
+        break;
+
+    case jugador11===2 && jugador22===1:
+        resultado = "Gana jugador1";
+        break;
+                
+    case jugador11===3 && jugador22===2:
+        resultado = "Gana jugador1";
+        break;
+
+    default:
+        resultado = "Gana jugador2";           
+}
+
+alert(resultado);
+ 
+
+
+
+/*    
+    var accion;
+    var jugador1= prompt("Jugador 1:: elija una opcion 1.(piedra) 2.(papel) 3.(tijera)");
+    var jugador2= prompt("Jugador 2:: elija una opcion 1.(piedra) 2.(papel) 3.(tijera)");
+
+    var jugador11 = parseInt(jugador1);
+    var jugador22 = parseInt(jugador2);
+
+    if(jugador11===1 && (jugador22===3)){
+        accion="Gana jugador1";
+    }else if(jugador11===2 && (jugador22===1)){
+        accion="Gana jugador1";
+    }else if(jugador11===3 && (jugador22===2)){
+        accion="Gana jugador1";
+    }else if(jugador11===jugador22){
+        accion = "Estan empatados"; 
+    }else{
+        accion = "Gana jugador2"
+    }  
+    alert(accion);
+
+/*
+
+
+var edad;
+var accion;
+
+var edad = prompt("Ingrese su edad");
+var edad1 = parseInt(edad);
+
+if( edad1 === 18 ){
+    accion = "Puede votar, sera su primera votacion";
+}else if( edad1 > 18 ){
+    accion = "Puede votar";
+}else{
+    accion = "Aun no puedes votar";
+}
+
+alert(accion);
+
+
+/*
+
+var manzanas ;
+var jose ;
+var amigos ;
+
+var manzanas= prompt("Ingrese la cantidad de manzanas");
+var jose= prompt("Ingrese la cantidad de manzanas que se come jose");
+var amigos= prompt("Ingrese la cantidad de manzanas que se come los amigos");
+
+var manzanas1=parseInt(manzanas);
+var jose1=parseInt(jose);
+var amigos1=parseInt(amigos);
+
+var cantidad = manzanas1 - jose1;
+
+var total = parseInt(cantidad / amigos1);
+
+alert("El total de manzanas que se comen los amigos es :" + " " + total);
+
+*/
